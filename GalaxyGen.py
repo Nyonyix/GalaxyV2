@@ -3,10 +3,9 @@ import datetime
 import aux_funcs
 
 class CelestialObject(object):
-    def __init__(self, id: int, class_str: str, spec_class: str, temp: float, mass: float, radius: float):
+    def __init__(self, id: int, colour: float, temp: float, mass: float, radius: float):
         self.id = int
-        self.class_str = str
-        self.spec_class = str
+        self.colour = float
         self.temp = float
         self.mass = float
         self.radius = float
