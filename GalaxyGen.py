@@ -2,8 +2,12 @@ import random
 import datetime
 import aux_funcs
 
+class Galaxy(object):
+    pass
+
 class CelestialObject(object):
-    def __init__(self, id: int, colour: float, temp: float, mass: float, radius: float):
+    def __init__(self, type_str: str, id: int, colour: float, temp: float, mass: float, radius: float):
+        self.type_str = str
         self.id = int
         self.colour = float
         self.temp = float
@@ -11,7 +15,10 @@ class CelestialObject(object):
         self.radius = float
 
 class Star(CelestialObject):
-    pass
+    def __init__(self, spec_class: str, sys_radius: float, is_parent: bool):
+        self.spec_class = str
+        self.sys_radius = float
+        self.is_parent = bool
 
 class Planet(CelestialObject):
     pass
@@ -22,7 +29,7 @@ class Moon(Planet):
 class Asteroid(CelestialObject):
     pass
 
-class SpaceObject(CelestialObject):
+class GenericObject(CelestialObject):
     pass
 
 class GalaxyGen:
