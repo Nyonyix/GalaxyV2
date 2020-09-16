@@ -1,7 +1,6 @@
 import Aux_Funcs
 import Galaxy_Types
 
-
 class GalaxyGen:
 
     def __init__(self, seed: int, name: str):

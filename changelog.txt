@@ -1,4 +1,7 @@
 
+Commit 7:
+ - Fixed the issues with the galaxy types. Still investigating dict type casting.
+
 Commit 6:
  - Saved changelog file. Is now no longer empty. Whoops.
 
