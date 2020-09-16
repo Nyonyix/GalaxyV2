@@ -1,0 +1,7 @@
+
+Commit 6:
+ - Saved changelog file. Is now no longer empty. Whoops.
+
+Commit 5:
+ - Added and fleshed out the different expected objects involved with the galaxy.
+ - Finished fleshing out 'saveToFile' function.
