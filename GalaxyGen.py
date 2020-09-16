@@ -1,36 +1,6 @@
-import random
-import datetime
-import aux_funcs
+import Aux_Funcs
+import Galaxy_Types
 
-class Galaxy(object):
-    pass
-
-class CelestialObject(object):
-    def __init__(self, type_str: str, id: int, colour: float, temp: float, mass: float, radius: float):
-        self.type_str = str
-        self.id = int
-        self.colour = float
-        self.temp = float
-        self.mass = float
-        self.radius = float
-
-class Star(CelestialObject):
-    def __init__(self, spec_class: str, sys_radius: float, is_parent: bool):
-        self.spec_class = str
-        self.sys_radius = float
-        self.is_parent = bool
-
-class Planet(CelestialObject):
-    pass
-
-class Moon(Planet):
-    pass
-
-class Asteroid(CelestialObject):
-    pass
-
-class GenericObject(CelestialObject):
-    pass
 
 class GalaxyGen:
 
@@ -38,7 +8,7 @@ class GalaxyGen:
         self.seed = int
         self.name = str
 
-    def galaxyGenerator(self) -> None:
+    def galaxyGenerator(self) -> Galaxy_Types.Galaxy:
         """
         Where all the data comes together to formulate and generate the larger axy
         """
@@ -46,7 +16,7 @@ class GalaxyGen:
 
 
 
-    def starGenerate(self) -> Star:
+    def starGenerate(self) -> Galaxy_Types.Star:
         """
         Function to generate either a specific class or generic rtandom star
         """
@@ -54,7 +24,7 @@ class GalaxyGen:
     
     
     
-    def planetGenerator(self) -> Planet:
+    def planetGenerator(self) -> Galaxy_Types.Planet:
         """
         Function to generate either a specific type or generic rtandom planet
         """
@@ -62,7 +32,7 @@ class GalaxyGen:
     
     
     
-    def moonGenerator(self) -> Moon:
+    def moonGenerator(self) -> Galaxy_Types.Moon:
         """
         Copy of planetGenerator with extra logic to determin moons
         """
@@ -70,7 +40,7 @@ class GalaxyGen:
     
     
     
-    def asteroidGenerator(self) -> Asteroid:
+    def asteroidGenerator(self) -> Galaxy_Types.Asteroid:
         """
         Function to generate a generic rtandom asteroid
         """
@@ -78,7 +48,7 @@ class GalaxyGen:
     
     
     
-    def planemoGenerator(self) -> Planet:
+    def planemoGenerator(self) -> Galaxy_Types.Planet:
         """
         Function to generate rouge planets without a solar system in insterstellar space
         """
