@@ -1,4 +1,8 @@
 
+Commit 10:
+ - Tweaked weights of planets
+ - Polished the planet definitions a bit.
+
 Commit 9:
  - Filled out planets portion of definitions file.
  - Removed 'saveToFile' function in 'Aux_Funcs' file.
