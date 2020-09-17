@@ -1,4 +1,11 @@
 
+Commit 9:
+ - Filled out planets portion of definitions file.
+ - Removed 'saveToFile' function in 'Aux_Funcs' file.
+
+Commit 8:
+ - Added definintions file and structured the file with planned objects.
+
 Commit 7:
  - Fixed the issues with the galaxy types. Still investigating dict type casting.
 
