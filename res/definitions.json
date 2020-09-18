@@ -1,0 +1,615 @@
+{
+    "star_types": {
+        "brown_dwarf":{},
+        "red_dwarf": {},
+        "red_giant": {},
+        "red_supergiant": {},
+        "orange_dwarf": {},
+        "orange_giant": {},
+        "yellow_dwarf": {},
+        "yellow_giant": {},
+        "white_main": {},
+        "white_giant": {},
+        "blue_main": {},
+        "blue_giant": {},
+        "blue_supergiant": {},
+        "white_dwarf": {},
+        "neutron": {},
+        "black_hole": {}
+    },
+
+    "planet_types": {
+        "lava": {
+            "name_str": "Lava",
+            "desc": "$Dlava",
+            "weight": 0.4,
+            "life_prob": 0,
+            "life_types": [],
+            "has_atmos": true,
+            "atmos_types": ["co2_rich", "sulfur_rich"],
+            "has_ocean": true,
+            "ocean_types": ["lava"],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": 3000,
+                "min": 600
+            },
+            "resources": {
+                "minerals": {
+                    "max": 10,
+                    "min": 3
+                },
+                "gas": {
+                    "max": 10,
+                    "min": 3
+                }
+            }
+        },
+        "volcanic": {
+            "name_str": "Volcanic",
+            "desc": "$Dvolcanic",
+            "weight": 0.45,
+            "life_prob": 0.01,
+            "life_types": ["silicon", "sulfur"],
+            "has_atmos": true,
+            "atmos_types": ["sulfur_rich", "co2_rich"],
+            "has_ocean": true,
+            "ocean_types": ["lava"],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": 1800,
+                "min": 100
+            },
+            "resources": {
+                "minerals": {
+                    "max": 8,
+                    "min": 3
+                },
+                "gas": {
+                    "max": 12,
+                    "min": 3
+                }
+            }
+        },
+        "gaseous": {
+            "name_str": "Gaseous",
+            "desc": "$Dgaseous",
+            "weight": 0.40,
+            "life_prob": 0.5,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["co2_rich", "sulfur_rich", "oxygen_rich", "nitrogen_rich", "hydrogen_rich"],
+            "has_ocean": true,
+            "ocean_types": ["pure_water", "impure_water", "lava", "ammonia", "ice"],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": 800,
+                "min": -10
+            },
+            "resources": {
+                "minerals": {
+                    "max": 6,
+                    "min": 2
+                },
+                "hydrogen": {
+                    "max": 3,
+                    "min": 1
+                },
+                "helium": {
+                    "max": 3,
+                    "min": 1
+                },
+                "water": {
+                    "max": 3,
+                    "min": 1
+                },
+                "oxygen": {
+                    "max": 3,
+                    "min": 1
+                },
+                "gas": {
+                    "max": 15,
+                    "min": 5
+                }
+            }
+        },
+        "gas_dwarf": {
+            "name_str": "Gas Dwarf",
+            "desc": "$Dgas_dwarf",
+            "weight": 0.6,
+            "life_prob": 0.01,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["hydrogen_rich"],
+            "has_ocean": false,
+            "ocean_types": [],
+            "size": {
+                "max": 12,
+                "min": 5
+            },
+            "temp": {
+                "max": 600,
+                "min": 100
+            },
+            "resources": {
+                "minerals": {
+                    "max": 6,
+                    "min": 1
+                },
+                "oxygen": {
+                    "max": 3,
+                    "min": 1
+                },
+                "hydrogen": {
+                    "max": 3,
+                    "min": 1
+                },
+                "helium": {
+                    "max": 3,
+                    "min": 1
+                },
+                "gas": {
+                    "max": 20,
+                    "min": 10
+                }
+            }
+        },
+        "gas_giant": {
+            "name_str": "Gas Giant",
+            "desc": "$Dgas_giant",
+            "weight": 0.5,
+            "life_prob": 0.01,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["hydrogen_rich"],
+            "has_ocean": false,
+            "ocean_types": [],
+            "size": {
+                "max": 30,
+                "min": 15
+            },
+            "temp": {
+                "max": 2000,
+                "min": -273
+            },
+            "resources": {
+                "oxygen": {
+                    "max": 10,
+                    "min": 5
+                },
+                "hydrogen": {
+                    "max": 20,
+                    "min": 10
+                },
+                "helium": {
+                    "max": 20,
+                    "min": 5
+                },
+                "water": {
+                    "max": 10,
+                    "min": 3
+                }
+            }
+        },
+        "ice_dwarf": {
+            "name_str": "Ice Dwarf",
+            "desc": "$Dice_dwarf",
+            "weight": 0.5,
+            "life_prob": 0.01,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["ammonia_rich"],
+            "has_ocean": false,
+            "ocean_types": [],
+            "size": {
+                "max": 12,
+                "min": 5
+            },
+            "temp": {
+                "max": 600,
+                "min": -273
+            },
+            "resources": {
+                "oxygen": {
+                    "max": 6,
+                    "min": 2
+                },
+                "hydrogen": {
+                    "max": 8,
+                    "min": 4
+                },
+                "helium": {
+                    "max": 12,
+                    "min": 5
+                },
+                "water": {
+                    "max": 6,
+                    "min": 3
+                }
+            }
+        },
+        "ice_giant": {
+            "name_str": "Ice Giant",
+            "desc": "$Dice_giant",
+            "weight": 0.4,
+            "life_prob": 0.01,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["ammonia_rich"],
+            "has_ocean": false,
+            "ocean_types": [],
+            "size": {
+                "max": 30,
+                "min": 15
+            },
+            "temp": {
+                "max": 600,
+                "min": -273
+            },
+            "resources": {
+                "oxygen": {
+                    "max": 8,
+                    "min": 2
+                },
+                "hydrogen": {
+                    "max": 12,
+                    "min": 5
+                },
+                "helium": {
+                    "max": 20,
+                    "min": 5
+                },
+                "water": {
+                    "max": 10,
+                    "min": 3
+                },
+                "gas": {
+                    "max": 15,
+                    "min": 6
+                }
+            }
+        },
+        "terra": {
+            "name_str": "Terrestrial",
+            "desc": "$Dterra",
+            "weight": 0.2,
+            "life_prob": 0.1,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["all"],
+            "has_ocean": true,
+            "ocean_types": ["impure_water", "pure_water", "ice", "ammonia"],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": 100,
+                "min": -30
+            },
+            "resources": {
+                "minerals": {
+                    "max": 7,
+                    "min": 3
+                },
+                "oxygen": {
+                    "max": 4,
+                    "min": 1
+                },
+                "hydrogen": {
+                    "max": 4,
+                    "min": 1
+                },
+                "helium": {
+                    "max": 4,
+                    "min": 1
+                },
+                "water": {
+                    "max": 4,
+                    "min": 1
+                },
+                "gas": {
+                    "max": 3,
+                    "min": 0
+                },
+                "ice": {
+                    "max": 4,
+                    "min": 1
+                }
+            }
+        },
+        "oceanic": {
+            "name_str": "Oceanic",
+            "desc": "$Doceanic",
+            "weight": 0.3,
+            "life_prob": 0.1,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["all"],
+            "has_ocean": true,
+            "ocean_types": ["impure_water", "ice", "pure_water", "ammonia"],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": 150,
+                "min": -40
+            },
+            "resources": {
+                "minerals": {
+                    "max": 4,
+                    "min": 1
+                },
+                "helium": {
+                    "max": 5,
+                    "min": 2
+                },
+                "hydrogen": {
+                    "max": 5,
+                    "min": 2
+                },
+                "oxygen": {
+                    "max": 5,
+                    "min": 2
+                },
+                "water": {
+                    "max": 10,
+                    "min": 4
+                },
+                "gas": {
+                    "max": 5,
+                    "min": 2
+                },
+                "ice": {
+                    "max": 4,
+                    "min": 1
+                }
+            }
+        },
+        "arid": {
+            "name_str": "Arid",
+            "desc": "$Darid",
+            "weight": 0.4,
+            "life_prob": 0.01,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["all"],
+            "has_ocean": false,
+            "ocean_types": [],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": 300,
+                "min": -150
+            },
+            "resources": {
+                "minerals": {
+                    "max": 7,
+                    "min": 3
+                },
+                "gas": {
+                    "max": 4,
+                    "min": 0
+                },
+                "helium": {
+                    "max": 3,
+                    "min": 0
+                },
+                "hydrogen": {
+                    "max": 3,
+                    "min": 1
+                },
+                "oxygen": {
+                    "max": 3,
+                    "min": 1
+                },
+                "ice": {
+                    "max": 5,
+                    "min": 2
+                }
+            }
+        },
+        "tundra": {
+            "name_str": "Tundra",
+            "desc": "$Dtundra",
+            "weight": 0.4,
+            "life_prob": 0.01,
+            "life_types": ["all"],
+            "has_atmos": true,
+            "atmos_types": ["all"],
+            "has_ocean": true,
+            "ocean_types": ["ice"],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": 10,
+                "min": -200
+            },
+            "resources": {
+                "minerals": {
+                    "max": 7,
+                    "min": 3
+                },
+                "gas": {
+                    "max": 3,
+                    "min": 1
+                },
+                "helium": {
+                    "max": 3,
+                    "min": 0
+                },
+                "hydrogen": {
+                    "max": 3,
+                    "min": 1
+                },
+                "oxygen": {
+                    "max": 3,
+                    "min": 1
+                },
+                "water": {
+                    "max": 4,
+                    "min": 1
+                },
+                "ice": {
+                    "max": 5,
+                    "min": 2
+                }
+            }
+        },
+        "glacial": {
+            "name_str": "Glacial",
+            "desc": "$Dglacial",
+            "weight": 0.4,
+            "life_prob": 0.05,
+            "life_types": ["all"],
+            "has_atmos": false,
+            "atmos_types": [],
+            "has_ocean": false,
+            "ocean_types": [],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": -50,
+                "min": -273
+            },
+            "resources": {
+                "hydrogen": {
+                    "max": 2,
+                    "min": 0
+                },
+                "oxygen": {
+                    "max": 2,
+                    "min": 0
+                },
+                "water": {
+                    "max": 10,
+                    "min": 3
+                },
+                "ice": {
+                    "max": 7,
+                    "min": 3
+                }
+            }
+        },
+        "titan": {
+            "name_str": "Titan",
+            "desc": "$Dtitan",
+            "weight": 0.5,
+            "life_prob": 0,
+            "life_types": [],
+            "has_atmos": true,
+            "atmos_types": ["hydrocarbon_rich"],
+            "has_ocean": true,
+            "ocean_types": ["hydrocarbon"],
+            "size": {
+                "max": 12,
+                "min": 3
+            },
+            "temp": {
+                "max": -90,
+                "min": -273
+            },
+            "resources": {
+                "minerals": {
+                    "max": 7,
+                    "min": 3
+                },
+                "gas": {
+                    "max": 4,
+                    "min": 3
+                },
+                "ice": {
+                    "max": 10,
+                    "min": 7
+                }
+            }
+        },
+        "airless": {
+            "name_str": "Airless",
+            "desc": "$Dairless",
+            "weight": 0.6,
+            "life_prob": 0,
+            "life_types": [],
+            "has_atmos": false,
+            "atmos_types": [],
+            "has_ocean": false,
+            "ocean_types": [],
+            "size": {
+                "max": 8,
+                "min": 3
+            },
+            "temp": {
+                "max": 3000,
+                "min": -273
+            },
+            "resources": {
+                "minerals": {
+                    "max": 7,
+                    "min": 3
+                },
+                "helium": {
+                    "max": 5,
+                    "min": 3
+                },
+                "ice": {
+                    "max": 5,
+                    "min": 3
+                }
+            }
+        }
+    },
+
+    "resource_types": [
+        "minerals",
+        "water",
+        "oxygen",
+        "energy",
+        "hydrogen",
+        "helium",
+        "gas"
+    ],
+
+    "life_types": [
+        "carbon",
+        "sulfur",
+        "chlorine",
+        "silicon"
+    ],
+
+    "ocean_types": {
+        "pure_water": {},
+        "impure_water": {},
+        "ice": {},
+        "lava": {},
+        "ammonia": {},
+        "hydrocarbon": {}
+    },
+
+    "atmosphere_types": {
+        "co2_rich": {},
+        "sulfur_rich": {},
+        "oxygen_rich": {},
+        "nitorgen_rich": {},
+        "hydrogen_rich": {},
+        "ammonia_rich": {},
+        "hydrocarbon_rich": {}
+    },
+
+    "anomoly_types": {}
+}
