@@ -1,9 +1,13 @@
 {
     "star_types": {
-        "brown_dwarf":{
+        "brown_dwarf": {
             "name_str": "Brown Dwarf",
             "desc": "",
-            "colour": [181, 0, 0],
+            "colour": [
+                181,
+                0,
+                0
+            ],
             "texture": "brown_dwarf.png",
             "weight": 0.1,
             "size": 7,
@@ -14,7 +18,11 @@
         "red_dwarf": {
             "name_str": "Red Dwarf",
             "desc": "",
-            "colour": [255, 54, 54],
+            "colour": [
+                255,
+                54,
+                54
+            ],
             "texture": "main_seq.png",
             "weight": 70,
             "size": 0,
@@ -25,7 +33,11 @@
         "red_giant": {
             "name_str": "Red Giant",
             "desc": "",
-            "colour": [255, 0, 0],
+            "colour": [
+                255,
+                0,
+                0
+            ],
             "texture": "main_seq.png",
             "weight": 5.8,
             "size": 0,
@@ -36,7 +48,11 @@
         "red_supergiant": {
             "name_str": "Red Supergiant",
             "desc": "",
-            "colour": [240, 0, 0],
+            "colour": [
+                240,
+                0,
+                0
+            ],
             "texture": "giant.png",
             "weight": 3,
             "size": 0,
@@ -47,7 +63,11 @@
         "orange_dwarf": {
             "name_str": "Orange Dwarf",
             "desc": "",
-            "colour": [255, 159, 48],
+            "colour": [
+                255,
+                159,
+                48
+            ],
             "texture": "main_seq.png",
             "weight": 20,
             "size": 0,
@@ -58,7 +78,11 @@
         "orange_giant": {
             "name_str": "Orange Giant",
             "desc": "",
-            "colour": [224, 120, 0],
+            "colour": [
+                224,
+                120,
+                0
+            ],
             "texture": "main_seq.png",
             "weight": 2.8,
             "size": 0,
@@ -69,7 +93,11 @@
         "yellow_dwarf": {
             "name_str": "Yellow Dwarf",
             "desc": "",
-            "colour": [255, 255, 110],
+            "colour": [
+                255,
+                255,
+                110
+            ],
             "texture": "main_seq.png",
             "weight": 10,
             "size": 0,
@@ -80,7 +108,11 @@
         "yellow_giant": {
             "name_str": "Yello Giant",
             "desc": "",
-            "colour": [255, 255, 0],
+            "colour": [
+                255,
+                255,
+                0
+            ],
             "texture": "main_seq.png",
             "weight": 0.01,
             "size": 0,
@@ -91,7 +123,11 @@
         "white_main": {
             "name_str": "White Main Sequence",
             "desc": "",
-            "colour": [255, 255, 255],
+            "colour": [
+                255,
+                255,
+                255
+            ],
             "texture": "main_seq.png",
             "weight": 1,
             "size": 0,
@@ -102,7 +138,11 @@
         "white_giant": {
             "name_str": "White Giant",
             "desc": "",
-            "colour": [255,255, 255],
+            "colour": [
+                255,
+                255,
+                255
+            ],
             "texture": "main_seq.png",
             "weight": 0.0001,
             "size": 0,
@@ -113,7 +153,11 @@
         "blue_main": {
             "name_str": "Blue Main Sequence",
             "desc": "",
-            "colour": [71, 139, 255],
+            "colour": [
+                71,
+                139,
+                255
+            ],
             "texture": "main_seq.png",
             "weight": 0.1,
             "size": 0,
@@ -124,8 +168,12 @@
         "blue_giant": {
             "name_str": "Blue Giant",
             "desc": "",
-            "colour": [0, 94, 255],
-            "texture":"giant.png",
+            "colour": [
+                0,
+                94,
+                255
+            ],
+            "texture": "giant.png",
             "weight": 0.0001,
             "size": 0,
             "mass": {},
@@ -135,8 +183,12 @@
         "blue_supergiant": {
             "name_str": "Blue Supergiant",
             "desc": "",
-            "colour": [0, 94, 255],
-            "texture":"main_seq.png",
+            "colour": [
+                0,
+                94,
+                255
+            ],
+            "texture": "main_seq.png",
             "weight": 0.0001,
             "size": 0,
             "mass": {},
@@ -146,7 +198,11 @@
         "white_dwarf": {
             "name_str": "White Dwarf",
             "desc": "",
-            "colour": [255, 255, 255],
+            "colour": [
+                255,
+                255,
+                255
+            ],
             "texture": "white_dwarf.png",
             "weight": 0.1,
             "size": 0,
@@ -157,7 +213,11 @@
         "neutron": {
             "name_str": "Neutron Star",
             "desc": "",
-            "colour": [0, 195, 255],
+            "colour": [
+                0,
+                195,
+                255
+            ],
             "texture": "neutron_star.png",
             "weight": 0.01,
             "size": 0,
@@ -168,7 +228,11 @@
         "black_hole_acc": {
             "name_str": "Black Hole w/ Disk",
             "desc": "",
-            "colour": [255, 255, 255],
+            "colour": [
+                255,
+                255,
+                255
+            ],
             "texture": "black_hole_disk.png",
             "weight": 0.0001,
             "size": 0,
@@ -179,7 +243,11 @@
         "black_hole": {
             "name_str": "Black Hole",
             "desc": "",
-            "colour": [255, 255, 255],
+            "colour": [
+                255,
+                255,
+                255
+            ],
             "texture": "black_hole.png",
             "weight": 0.0001,
             "size": 0,
@@ -188,7 +256,6 @@
             "temp": {}
         }
     },
-
     "planet_types": {
         "lava": {
             "name_str": "Lava",
@@ -197,9 +264,14 @@
             "life_prob": 0,
             "life_types": [],
             "has_atmos": true,
-            "atmos_types": ["co2_rich", "sulfur_rich"],
+            "atmos_types": [
+                "co2_rich",
+                "sulfur_rich"
+            ],
             "has_ocean": true,
-            "ocean_types": ["lava"],
+            "ocean_types": [
+                "lava"
+            ],
             "size": {
                 "max": 12,
                 "min": 3
@@ -217,18 +289,32 @@
                     "max": 10,
                     "min": 3
                 }
-            }
+            },
+            "colour": [
+                255,
+                255,
+                255
+            ],
+            "texture": "lava_world.png"
         },
         "volcanic": {
             "name_str": "Volcanic",
             "desc": "$Dvolcanic",
             "weight": 0.45,
             "life_prob": 0.01,
-            "life_types": ["silicon", "sulfur"],
+            "life_types": [
+                "silicon",
+                "sulfur"
+            ],
             "has_atmos": true,
-            "atmos_types": ["sulfur_rich", "co2_rich"],
+            "atmos_types": [
+                "sulfur_rich",
+                "co2_rich"
+            ],
             "has_ocean": true,
-            "ocean_types": ["lava"],
+            "ocean_types": [
+                "lava"
+            ],
             "size": {
                 "max": 12,
                 "min": 3
@@ -246,18 +332,38 @@
                     "max": 12,
                     "min": 3
                 }
-            }
+            },
+            "colour": [
+                255,
+                255,
+                255
+            ],
+            "texture": "lava_world.png"
         },
         "gaseous": {
             "name_str": "Gaseous",
             "desc": "$Dgaseous",
-            "weight": 0.40,
+            "weight": 0.4,
             "life_prob": 0.5,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["co2_rich", "sulfur_rich", "oxygen_rich", "nitrogen_rich", "hydrogen_rich"],
+            "atmos_types": [
+                "co2_rich",
+                "sulfur_rich",
+                "oxygen_rich",
+                "nitrogen_rich",
+                "hydrogen_rich"
+            ],
             "has_ocean": true,
-            "ocean_types": ["pure_water", "impure_water", "lava", "ammonia", "ice"],
+            "ocean_types": [
+                "pure_water",
+                "impure_water",
+                "lava",
+                "ammonia",
+                "ice"
+            ],
             "size": {
                 "max": 12,
                 "min": 3
@@ -291,16 +397,26 @@
                     "max": 15,
                     "min": 5
                 }
-            }
+            },
+            "colour": [
+                171,
+                137,
+                0
+            ],
+            "texture": "gas_dwarf.png"
         },
         "gas_dwarf": {
             "name_str": "Gas Dwarf",
             "desc": "$Dgas_dwarf",
             "weight": 0.6,
             "life_prob": 0.01,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["hydrogen_rich"],
+            "atmos_types": [
+                "hydrogen_rich"
+            ],
             "has_ocean": false,
             "ocean_types": [],
             "size": {
@@ -332,16 +448,26 @@
                     "max": 20,
                     "min": 10
                 }
-            }
+            },
+            "colour": [
+                191,
+                173,
+                99
+            ],
+            "texture": "gas_dwarf.png"
         },
         "gas_giant": {
             "name_str": "Gas Giant",
             "desc": "$Dgas_giant",
             "weight": 0.5,
             "life_prob": 0.01,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["hydrogen_rich"],
+            "atmos_types": [
+                "hydrogen_rich"
+            ],
             "has_ocean": false,
             "ocean_types": [],
             "size": {
@@ -369,16 +495,26 @@
                     "max": 10,
                     "min": 3
                 }
-            }
+            },
+            "colour": [
+                191,
+                173,
+                99
+            ],
+            "texture": "gas_giant.png"
         },
         "ice_dwarf": {
             "name_str": "Ice Dwarf",
             "desc": "$Dice_dwarf",
             "weight": 0.5,
             "life_prob": 0.01,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["ammonia_rich"],
+            "atmos_types": [
+                "ammonia_rich"
+            ],
             "has_ocean": false,
             "ocean_types": [],
             "size": {
@@ -406,16 +542,26 @@
                     "max": 6,
                     "min": 3
                 }
-            }
+            },
+            "colour": [
+                128,
+                164,
+                194
+            ],
+            "texture": "gas_dwarf.png"
         },
         "ice_giant": {
             "name_str": "Ice Giant",
             "desc": "$Dice_giant",
             "weight": 0.4,
             "life_prob": 0.01,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["ammonia_rich"],
+            "atmos_types": [
+                "ammonia_rich"
+            ],
             "has_ocean": false,
             "ocean_types": [],
             "size": {
@@ -447,18 +593,33 @@
                     "max": 15,
                     "min": 6
                 }
-            }
+            },
+            "colour": [
+                62,
+                121,
+                168
+            ],
+            "texture": "gas_giant.png"
         },
         "terra": {
             "name_str": "Terrestrial",
             "desc": "$Dterra",
             "weight": 0.2,
             "life_prob": 0.1,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["all"],
+            "atmos_types": [
+                "all"
+            ],
             "has_ocean": true,
-            "ocean_types": ["impure_water", "pure_water", "ice", "ammonia"],
+            "ocean_types": [
+                "impure_water",
+                "pure_water",
+                "ice",
+                "ammonia"
+            ],
             "size": {
                 "max": 12,
                 "min": 3
@@ -496,18 +657,33 @@
                     "max": 4,
                     "min": 1
                 }
-            }
+            },
+            "colour": [
+                255,
+                255,
+                255
+            ],
+            "texture": "terra.png"
         },
         "oceanic": {
             "name_str": "Oceanic",
             "desc": "$Doceanic",
             "weight": 0.3,
             "life_prob": 0.1,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["all"],
+            "atmos_types": [
+                "all"
+            ],
             "has_ocean": true,
-            "ocean_types": ["impure_water", "ice", "pure_water", "ammonia"],
+            "ocean_types": [
+                "impure_water",
+                "ice",
+                "pure_water",
+                "ammonia"
+            ],
             "size": {
                 "max": 12,
                 "min": 3
@@ -545,16 +721,26 @@
                     "max": 4,
                     "min": 1
                 }
-            }
+            },
+            "colour": [
+                255,
+                255,
+                255
+            ],
+            "texture": "ocean.png"
         },
         "arid": {
             "name_str": "Arid",
             "desc": "$Darid",
             "weight": 0.4,
             "life_prob": 0.01,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["all"],
+            "atmos_types": [
+                "all"
+            ],
             "has_ocean": false,
             "ocean_types": [],
             "size": {
@@ -590,18 +776,30 @@
                     "max": 5,
                     "min": 2
                 }
-            }
+            },
+            "colour": [
+                255,
+                255,
+                255
+            ],
+            "texture": "arid.png"
         },
         "tundra": {
             "name_str": "Tundra",
             "desc": "$Dtundra",
             "weight": 0.4,
             "life_prob": 0.01,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": true,
-            "atmos_types": ["all"],
+            "atmos_types": [
+                "all"
+            ],
             "has_ocean": true,
-            "ocean_types": ["ice"],
+            "ocean_types": [
+                "ice"
+            ],
             "size": {
                 "max": 12,
                 "min": 3
@@ -639,14 +837,22 @@
                     "max": 5,
                     "min": 2
                 }
-            }
+            },
+            "colour": [
+                156,
+                200,
+                230
+            ],
+            "texture": "terra.png"
         },
         "glacial": {
             "name_str": "Glacial",
             "desc": "$Dglacial",
             "weight": 0.4,
             "life_prob": 0.05,
-            "life_types": ["all"],
+            "life_types": [
+                "all"
+            ],
             "has_atmos": false,
             "atmos_types": [],
             "has_ocean": false,
@@ -676,7 +882,13 @@
                     "max": 7,
                     "min": 3
                 }
-            }
+            },
+            "colour": [
+                209,
+                240,
+                255
+            ],
+            "texture": "ocean.png"
         },
         "titan": {
             "name_str": "Titan",
@@ -685,9 +897,13 @@
             "life_prob": 0,
             "life_types": [],
             "has_atmos": true,
-            "atmos_types": ["hydrocarbon_rich"],
+            "atmos_types": [
+                "hydrocarbon_rich"
+            ],
             "has_ocean": true,
-            "ocean_types": ["hydrocarbon"],
+            "ocean_types": [
+                "hydrocarbon"
+            ],
             "size": {
                 "max": 12,
                 "min": 3
@@ -709,7 +925,13 @@
                     "max": 10,
                     "min": 7
                 }
-            }
+            },
+            "colour": [
+                181,
+                167,
+                123
+            ],
+            "texture": "terra.png"
         },
         "airless": {
             "name_str": "Airless",
@@ -742,10 +964,15 @@
                     "max": 5,
                     "min": 3
                 }
-            }
+            },
+            "colour": [
+                166,
+                146,
+                138
+            ],
+            "texture": "aireless.png"
         }
     },
-
     "resource_types": [
         "minerals",
         "water",
@@ -755,14 +982,12 @@
         "helium",
         "gas"
     ],
-
     "life_types": [
         "carbon",
         "sulfur",
         "chlorine",
         "silicon"
     ],
-
     "ocean_types": {
         "pure_water": {},
         "impure_water": {},
@@ -771,7 +996,6 @@
         "ammonia": {},
         "hydrocarbon": {}
     },
-
     "atmosphere_types": {
         "co2_rich": {},
         "sulfur_rich": {},
@@ -781,6 +1005,5 @@
         "ammonia_rich": {},
         "hydrocarbon_rich": {}
     },
-
     "anomoly_types": {}
 }
