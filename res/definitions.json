@@ -1,21 +1,192 @@
 {
     "star_types": {
-        "brown_dwarf":{},
-        "red_dwarf": {},
-        "red_giant": {},
-        "red_supergiant": {},
-        "orange_dwarf": {},
-        "orange_giant": {},
-        "yellow_dwarf": {},
-        "yellow_giant": {},
-        "white_main": {},
-        "white_giant": {},
-        "blue_main": {},
-        "blue_giant": {},
-        "blue_supergiant": {},
-        "white_dwarf": {},
-        "neutron": {},
-        "black_hole": {}
+        "brown_dwarf":{
+            "name_str": "Brown Dwarf",
+            "desc": "",
+            "colour": [181, 0, 0],
+            "texture": "brown_dwarf.png",
+            "weight": 0.1,
+            "size": 7,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "red_dwarf": {
+            "name_str": "Red Dwarf",
+            "desc": "",
+            "colour": [255, 54, 54],
+            "texture": "main_seq.png",
+            "weight": 70,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "red_giant": {
+            "name_str": "Red Giant",
+            "desc": "",
+            "colour": [255, 0, 0],
+            "texture": "main_seq.png",
+            "weight": 5.8,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "red_supergiant": {
+            "name_str": "Red Supergiant",
+            "desc": "",
+            "colour": [240, 0, 0],
+            "texture": "giant.png",
+            "weight": 3,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "orange_dwarf": {
+            "name_str": "Orange Dwarf",
+            "desc": "",
+            "colour": [255, 159, 48],
+            "texture": "main_seq.png",
+            "weight": 20,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "orange_giant": {
+            "name_str": "Orange Giant",
+            "desc": "",
+            "colour": [224, 120, 0],
+            "texture": "main_seq.png",
+            "weight": 2.8,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "yellow_dwarf": {
+            "name_str": "Yellow Dwarf",
+            "desc": "",
+            "colour": [255, 255, 110],
+            "texture": "main_seq.png",
+            "weight": 10,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "yellow_giant": {
+            "name_str": "Yello Giant",
+            "desc": "",
+            "colour": [255, 255, 0],
+            "texture": "main_seq.png",
+            "weight": 0.01,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "white_main": {
+            "name_str": "White Main Sequence",
+            "desc": "",
+            "colour": [255, 255, 255],
+            "texture": "main_seq.png",
+            "weight": 1,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "white_giant": {
+            "name_str": "White Giant",
+            "desc": "",
+            "colour": [255,255, 255],
+            "texture": "main_seq.png",
+            "weight": 0.0001,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "blue_main": {
+            "name_str": "Blue Main Sequence",
+            "desc": "",
+            "colour": [71, 139, 255],
+            "texture": "main_seq.png",
+            "weight": 0.1,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "blue_giant": {
+            "name_str": "Blue Giant",
+            "desc": "",
+            "colour": [0, 94, 255],
+            "texture":"giant.png",
+            "weight": 0.0001,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "blue_supergiant": {
+            "name_str": "Blue Supergiant",
+            "desc": "",
+            "colour": [0, 94, 255],
+            "texture":"main_seq.png",
+            "weight": 0.0001,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "white_dwarf": {
+            "name_str": "White Dwarf",
+            "desc": "",
+            "colour": [255, 255, 255],
+            "texture": "white_dwarf.png",
+            "weight": 0.1,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "neutron": {
+            "name_str": "Neutron Star",
+            "desc": "",
+            "colour": [0, 195, 255],
+            "texture": "neutron_star.png",
+            "weight": 0.01,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "black_hole_acc": {
+            "name_str": "Black Hole w/ Disk",
+            "desc": "",
+            "colour": [255, 255, 255],
+            "texture": "black_hole_disk.png",
+            "weight": 0.0001,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        },
+        "black_hole": {
+            "name_str": "Black Hole",
+            "desc": "",
+            "colour": [255, 255, 255],
+            "texture": "black_hole.png",
+            "weight": 0.0001,
+            "size": 0,
+            "mass": {},
+            "radius": {},
+            "temp": {}
+        }
     },
 
     "planet_types": {
