@@ -1,6 +1,8 @@
 #include "inc/GalaxyGen.hpp"
 #include <fstream>
 #include <sstream>
+#include <random>
+#include <vector>
 
 using nlohmann::json;
 
@@ -12,20 +14,44 @@ GalaxyGenerator::~GalaxyGenerator()
 {
 }
 
+int GalaxyGenerator::randomGen(int min, int max)
+{
+    std::default_random_engine gen;
+    std::uniform_int_distribution<int> dist(min, max);
+    return dist(gen);
+}
+
+double GalaxyGenerator::randomGen(double min, double max)
+{
+    std::default_random_engine gen;
+    std::uniform_real_distribution<double> dist(min, max);
+    return dist(gen);
+}
+
 json GalaxyGenerator::loadDef(std::string filename)
 {
-    std::ifstream f("Hello");
-    std::stringstream ss;
-    ss << f.rdbuf();
-    std::string j_string = ss.str();
-    json j = json::parse(j_string);
+    std::ifstream f(filename);
+    json j;
+    f >> j;
     return j;
 }
 
-json GalaxyGenerator::genStar()
+void GalaxyGenerator::genStar()
 {
-    json out_json;
-    std::cout << "Hello from genStar()" << std::endl;
-    out_json = GalaxyGenerator::loadDef("definitions.json");
-    return out_json;
+    json star_def = GalaxyGenerator::loadDef("res/definitions.json")["star_types"];
+
+    int i = 0;
+    std::vector<std::string> star_str_vect;
+    for (const auto& item : star_def.items())
+    {
+
+        star_str_vect.push_back(item.value()["name_str"]);
+
+    }
+
+    for (const auto& item : star_str_vect)
+    {
+        std::cout << item << std::endl;
+    }
+    
 }

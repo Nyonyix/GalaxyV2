@@ -20,8 +20,11 @@ public:
     GalaxyGenerator(std::string name, int seed, int star_count, int min_planets, int max_planets);
     ~GalaxyGenerator();
 
+    int randomGen(int min, int max);
+    double randomGen(double min, double max);
+
     static json loadDef(std::string filename);
-    static json genStar();
+    static void genStar();
 
 };
 
